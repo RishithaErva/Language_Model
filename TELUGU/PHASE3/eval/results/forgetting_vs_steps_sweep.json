@@ -1,0 +1,50 @@
+[
+  {
+    "step": 0,
+    "general_lm_ppl": 38.727254437808455,
+    "ppl_pct_change": 0.0,
+    "reasoning_answer_token_acc": null
+  },
+  {
+    "step": 300,
+    "general_lm_ppl": 40.14731697517155,
+    "ppl_pct_change": 3.666829879829339,
+    "reasoning_answer_token_acc": 0.7603711790393013
+  },
+  {
+    "step": 600,
+    "general_lm_ppl": 41.05614585002297,
+    "ppl_pct_change": 6.013572214251466,
+    "reasoning_answer_token_acc": 0.8253275109170306
+  },
+  {
+    "step": 900,
+    "general_lm_ppl": 42.01764987955327,
+    "ppl_pct_change": 8.496330270530311,
+    "reasoning_answer_token_acc": 0.7942139737991266
+  },
+  {
+    "step": 1200,
+    "general_lm_ppl": 43.077855209334224,
+    "ppl_pct_change": 11.233950959555724,
+    "reasoning_answer_token_acc": 0.7822052401746725
+  },
+  {
+    "step": 1500,
+    "general_lm_ppl": 44.14206824611004,
+    "ppl_pct_change": 13.981920192656982,
+    "reasoning_answer_token_acc": 0.7816593886462883
+  },
+  {
+    "step": 1800,
+    "general_lm_ppl": 44.875557271601366,
+    "ppl_pct_change": 15.875906833690943,
+    "reasoning_answer_token_acc": 0.7762008733624454
+  },
+  {
+    "step": 2100,
+    "general_lm_ppl": 45.528294709698564,
+    "ppl_pct_change": 17.561379887675237,
+    "reasoning_answer_token_acc": 0.7778384279475983
+  }
+]

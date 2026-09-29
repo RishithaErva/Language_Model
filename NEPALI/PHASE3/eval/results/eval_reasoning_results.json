@@ -1,0 +1,237 @@
+{
+  "language": "nepali",
+  "pretrained_checkpoint": "/Users/erva_rishitha/Documents/LMA_Project1/NEPALI/PHASE2/checkpoints/checkpoint_final.pt",
+  "finetuned_checkpoint": "/Users/erva_rishitha/Documents/LMA_Project1/NEPALI/PHASE3/finetune/checkpoints/checkpoint_final.pt",
+  "pretrained": {
+    "overall_accuracy": 0.0,
+    "per_template_accuracy": {
+      "pairwise": 0.0,
+      "threeway": 0.0,
+      "transitive": 0.0,
+      "transitive_4hop": 0.0
+    }
+  },
+  "finetuned": {
+    "overall_accuracy": 0.5274151436031331,
+    "per_template_accuracy": {
+      "pairwise": 0.328,
+      "threeway": 0.116,
+      "transitive": 0.884,
+      "transitive_4hop": 0.6867167919799498
+    }
+  },
+  "qualitative_examples_pretrained": [
+    {
+      "prompt": "सुरजको उचाइ 99 सेन्टिमिटर रहेको छ। सौम्याको उचाइ 167 सेन्टिमिटर रहेको छ। यी दुई मध्ये कसको उचाइ धेरै छ?\nजवाफ:",
+      "reference": " सौम्या",
+      "prediction": "- यो एक उचाइ हो। - यो एक उचाइ हो।",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "ऐना को मूल्य 26650 रुपैयाँ छ। किताबघरसँग 22493 रुपैयाँ मूल्य छ। यी मध्ये कसको मूल्य कम छ?\nजवाफ:",
+      "reference": " किताबघर",
+      "prediction": "ऐना को मूल्य कति? ऐना को मूल्य कति?",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "पार्वती को उमेर 76 वर्ष छ। कल्पना को उमेर 15 वर्ष छ। यी मध्ये उमेरले को सानो हो?\nजवाफ:",
+      "reference": " कल्पना",
+      "prediction": "- यो उमेर को उमेर को उमेर मा निर्भर गर्दछ। -",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "गोविन्द को उचाइ 178 सेन्टिमिटर छ। विमला को उचाइ 134 सेन्टिमिटर छ। यी दुई मध्ये कसको उचाइ धेरै छ?\nजवाफ:",
+      "reference": " गोविन्द",
+      "prediction": "- यो एक उचाइ को उचाइ मा एक उचाइ छ। -",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "विकास को उचाइ 182 सेन्टिमिटर छ। श्रीनिवाससँग 191 सेन्टिमिटर उचाइ छ। यी मध्ये कसको उचाइ कम छ?\nजवाफ:",
+      "reference": " विकास",
+      "prediction": "- यो एक उचाइ को उचाइ मा एक उचाइ छ। -",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "हेडफोनको तौल 98 किलोग्राम रहेको छ। कप को तौल 31 किलोग्राम छ। तौलका हिसाबले यी मध्ये को बढी छ?\nजवाफ:",
+      "reference": " हेडफोन",
+      "prediction": "- यो एक हो कि यो एक हो कि यो एक हो",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "कपको तौल 33 किलोग्राम रहेको छ। ऐना को तौल 13 किलोग्राम छ। यी मध्ये कुन हल्का छ?\nजवाफ:",
+      "reference": " ऐना",
+      "prediction": "कपको तौल 33 किलोग्राम छ। कपको तौल 33",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "ऐनासँग 3122 रुपैयाँ मूल्य छ। हेडफोनको मूल्य 44636 रुपैयाँ रहेको छ। यी दुई मध्ये कसको मूल्य थोरै छ?\nजवाफ:",
+      "reference": " ऐना",
+      "prediction": "1. इजरायल जान 15 सयदेखि दुई हजार डलर तिर्नुपर्ने प्रस्ताव गोपाल",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "विमलासँग 185 सेन्टिमिटर उचाइ छ। सुरजसँग 159 सेन्टिमिटर उचाइ छ। यी मध्ये कसको उचाइ कम छ?\nजवाफ:",
+      "reference": " सुरज",
+      "prediction": "- यो एक सानो आकार छ। - यो एक सानो आकार",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "सिन्धुसँग 101 सेन्टिमिटर उचाइ छ। इन्द्रा को उचाइ 198 सेन्टिमिटर छ। उचाइका हिसाबले यी मध्ये को बढी छ?\nजवाफ:",
+      "reference": " इन्द्रा",
+      "prediction": "- यो एक उचाइ छ। यो उचाइ को उचाइ मा एक",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "प्रकाशसँग 105 सेन्टिमिटर उचाइ छ। सुरजको उचाइ 179 सेन्टिमिटर रहेको छ। यी मध्ये को होचो छ?\nजवाफ:",
+      "reference": " प्रकाश",
+      "prediction": "- यो एक सानो आकारको छ, तर यो एक सानो",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "सिन्धु को उचाइ 153 सेन्टिमिटर छ। राघवसँग 169 सेन्टिमिटर उचाइ छ। यी मध्ये को अग्लो छ?\nजवाफ:",
+      "reference": " राघव",
+      "prediction": "- यो एक सानो आकार छ। - यो एक सानो आकार",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "विकाससँग 162 सेन्टिमिटर उचाइ छ। सविता को उचाइ 148 सेन्टिमिटर छ। यी दुई मध्ये कसको उचाइ थोरै छ?\nजवाफ:",
+      "reference": " सविता",
+      "prediction": "- यो एक उचाइ को उचाइ मा एक उचाइ छ। -",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "कल्पनासँग 97 सेन्टिमिटर उचाइ छ। विकाससँग 147 सेन्टिमिटर उचाइ छ। यी मध्ये को अग्लो छ?\nजवाफ:",
+      "reference": " विकास",
+      "prediction": "- यो एक सानो आकार छ। - यो एक सानो आकार",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "राघव को उचाइ 165 सेन्टिमिटर छ। सविता को उचाइ 119 सेन्टिमिटर छ। यी मध्ये को होचो छ?\nजवाफ:",
+      "reference": " सविता",
+      "prediction": "- यो एक सानो आकार छ। - यो एक सानो आकार",
+      "template": "pairwise",
+      "correct": false
+    }
+  ],
+  "qualitative_examples_finetuned": [
+    {
+      "prompt": "सुरजको उचाइ 99 सेन्टिमिटर रहेको छ। सौम्याको उचाइ 167 सेन्टिमिटर रहेको छ। यी दुई मध्ये कसको उचाइ धेरै छ?\nजवाफ:",
+      "reference": " सौम्या",
+      "prediction": "सुरजको",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "ऐना को मूल्य 26650 रुपैयाँ छ। किताबघरसँग 22493 रुपैयाँ मूल्य छ। यी मध्ये कसको मूल्य कम छ?\nजवाफ:",
+      "reference": " किताबघर",
+      "prediction": "किताब",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "पार्वती को उमेर 76 वर्ष छ। कल्पना को उमेर 15 वर्ष छ। यी मध्ये उमेरले को सानो हो?\nजवाफ:",
+      "reference": " कल्पना",
+      "prediction": "पार्वती",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "गोविन्द को उचाइ 178 सेन्टिमिटर छ। विमला को उचाइ 134 सेन्टिमिटर छ। यी दुई मध्ये कसको उचाइ धेरै छ?\nजवाफ:",
+      "reference": " गोविन्द",
+      "prediction": "गणेश",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "विकास को उचाइ 182 सेन्टिमिटर छ। श्रीनिवाससँग 191 सेन्टिमिटर उचाइ छ। यी मध्ये कसको उचाइ कम छ?\nजवाफ:",
+      "reference": " विकास",
+      "prediction": "विकास",
+      "template": "pairwise",
+      "correct": true
+    },
+    {
+      "prompt": "हेडफोनको तौल 98 किलोग्राम रहेको छ। कप को तौल 31 किलोग्राम छ। तौलका हिसाबले यी मध्ये को बढी छ?\nजवाफ:",
+      "reference": " हेडफोन",
+      "prediction": "टेबल",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "कपको तौल 33 किलोग्राम रहेको छ। ऐना को तौल 13 किलोग्राम छ। यी मध्ये कुन हल्का छ?\nजवाफ:",
+      "reference": " ऐना",
+      "prediction": "ऐना",
+      "template": "pairwise",
+      "correct": true
+    },
+    {
+      "prompt": "ऐनासँग 3122 रुपैयाँ मूल्य छ। हेडफोनको मूल्य 44636 रुपैयाँ रहेको छ। यी दुई मध्ये कसको मूल्य थोरै छ?\nजवाफ:",
+      "reference": " ऐना",
+      "prediction": "हेडफोनको",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "विमलासँग 185 सेन्टिमिटर उचाइ छ। सुरजसँग 159 सेन्टिमिटर उचाइ छ। यी मध्ये कसको उचाइ कम छ?\nजवाफ:",
+      "reference": " सुरज",
+      "prediction": "सुमन",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "सिन्धुसँग 101 सेन्टिमिटर उचाइ छ। इन्द्रा को उचाइ 198 सेन्टिमिटर छ। उचाइका हिसाबले यी मध्ये को बढी छ?\nजवाफ:",
+      "reference": " इन्द्रा",
+      "prediction": "इन्द्रा",
+      "template": "pairwise",
+      "correct": true
+    },
+    {
+      "prompt": "प्रकाशसँग 105 सेन्टिमिटर उचाइ छ। सुरजको उचाइ 179 सेन्टिमिटर रहेको छ। यी मध्ये को होचो छ?\nजवाफ:",
+      "reference": " प्रकाश",
+      "prediction": "प्रकाश",
+      "template": "pairwise",
+      "correct": true
+    },
+    {
+      "prompt": "सिन्धु को उचाइ 153 सेन्टिमिटर छ। राघवसँग 169 सेन्टिमिटर उचाइ छ। यी मध्ये को अग्लो छ?\nजवाफ:",
+      "reference": " राघव",
+      "prediction": "राघव",
+      "template": "pairwise",
+      "correct": true
+    },
+    {
+      "prompt": "विकाससँग 162 सेन्टिमिटर उचाइ छ। सविता को उचाइ 148 सेन्टिमिटर छ। यी दुई मध्ये कसको उचाइ थोरै छ?\nजवाफ:",
+      "reference": " सविता",
+      "prediction": "सविता",
+      "template": "pairwise",
+      "correct": true
+    },
+    {
+      "prompt": "कल्पनासँग 97 सेन्टिमिटर उचाइ छ। विकाससँग 147 सेन्टिमिटर उचाइ छ। यी मध्ये को अग्लो छ?\nजवाफ:",
+      "reference": " विकास",
+      "prediction": "कल्पना",
+      "template": "pairwise",
+      "correct": false
+    },
+    {
+      "prompt": "राघव को उचाइ 165 सेन्टिमिटर छ। सविता को उचाइ 119 सेन्टिमिटर छ। यी मध्ये को होचो छ?\nजवाफ:",
+      "reference": " सविता",
+      "prediction": "सविता",
+      "template": "pairwise",
+      "correct": true
+    }
+  ]
+}
